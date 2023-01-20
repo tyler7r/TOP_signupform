@@ -1,0 +1,14 @@
+body {
+    display: flex;
+}
+.right-side {
+    width: 65vw;
+}
+.left-side {
+    width: 35vw;
+    background-image: url('background_image.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    height: 100vh;
+}
