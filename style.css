@@ -1,14 +1,131 @@
 body {
     display: flex;
+    margin: 0px;
+    /* max-width: 1250px; */
+    min-width: 750px;
 }
+
+.main {
+    display: flex;
+    align-self: center;
+}
+
 .right-side {
-    width: 65vw;
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f9fafb;
 }
 .left-side {
-    width: 35vw;
+    width: 35%;
     background-image: url('background_image.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
     height: 100vh;
+}
+
+.taunt {
+    margin-top: 12px;
+}
+
+.intro-message {
+    padding: 25px;
+    font-weight: bold;
+}
+
+.action-items {
+    padding: 25px;
+}
+
+.content {
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 1px 30px gray;
+}
+
+button {
+    margin: 10px;
+    margin-left: 0px;
+    background-color: #596d48;
+    color: beige;
+    font-weight: bold;
+    box-shadow: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+    margin-top: -5px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+input {
+    display: flex;
+    width: 75%;
+}
+
+label {
+    font-size: 12px;
+    color:darkslategray;
+    font-weight: bold;
+}
+
+.exclamation {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sidebar {
+    background: rgb(0, 0, 0, 0.4);
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.sidebar img {
+    object-fit: contain;
+    height: 85%;
+}
+
+input {
+    margin: 0px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;;
+    box-shadow: 1px 1px 7px gray;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+@font-face {
+    font-family: NorseBold;
+    src: url('Norse-Bold.otf');
+}
+
+.title {
+    font-family: NorseBold;
+    font-size: 64px;
+    margin-top: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: bold;
 }
